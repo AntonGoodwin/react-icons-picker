@@ -34,7 +34,7 @@ const IconPickerItem = ({ value: icon, defaultIcon, ...props }) => {
 };
 
 IconPickerItem.defaultProps = {
-    defaultIcon: 'FaUser'
+    defaultIcon: ''
 }
 
 export default IconPickerItem;
