@@ -116,7 +116,7 @@ const PickerModal = ({
                         className="searchInput"
                         onFocus={searchInputFocusHandler}
                         onBlur={searchInputBlurHandler}
-                        placeholder={searchInputPlaceholder ? searchInputPlaceholder : 'Search by pressing "Enter"'}
+                        placeholder={searchInputPlaceholder ? searchInputPlaceholder : 'Search by pressing "Enter"!!!'}
                     />
                     <AiOutlineClose onClick={() => setModalOpen(false)} style={{ cursor: 'pointer' }} />
                 </div>
