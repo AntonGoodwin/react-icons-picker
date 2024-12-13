@@ -137,7 +137,6 @@ const PickerModal = ({
                         <div style={modalEmptyWrapperStyle} className="modalEmptyWrapper">
                             {modalEmptyContent ? modalEmptyContent : <>
                                 <h1>Search for the icon you want...</h1>
-                                <h2>by pressing "Enter" key</h2>
                             </>}
                         </div>
                     }
