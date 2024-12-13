@@ -76,12 +76,19 @@ const PickerModal = ({
         Object.keys(searchInputStyle).forEach(styleKey => target.style[styleKey] = searchInputStyle[styleKey])
     }
     const onKeyDown = (e) => {
+        console.log("onKeyDown", e)
         e.stopPropagation();
         e.preventDefault();
 
         if (e.key === "Enter") {
             setWatchRequest(watchRequest + 1)
         }
+    }
+
+    const onKeyPrevent = (e) => {
+        console.log("onKeyPrevent", e)
+        e.stopPropagation();
+        e.preventDefault();
     }
 
     const handleModalIconsMouseOver = (e) => {
@@ -102,6 +109,8 @@ const PickerModal = ({
                         value={searchValue}
                         onChange={(e) => setSearchValue(e.target.value)}
                         onKeyDown={onKeyDown}
+                        onKeyUp={onKeyPrevent}
+                        onKeyPress={onKeyPrevent}
                         ref={searchInputRef}
                         style={searchInputStyle}
                         className="searchInput"
